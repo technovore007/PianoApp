@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>sounds/A4.wav</file>
+        <file>sounds/B4.wav</file>
+        <file>sounds/Bb4.wav</file>
+        <file>sounds/C_Sharp_4.wav</file>
+        <file>sounds/C_Sharp_5.wav</file>
+        <file>sounds/C4.wav</file>
+        <file>sounds/C5.wav</file>
+        <file>sounds/D_Sharp_4.wav</file>
+        <file>sounds/D_Sharp_5.wav</file>
+        <file>sounds/D4.wav</file>
+        <file>sounds/D5.wav</file>
+        <file>sounds/E4.wav</file>
+        <file>sounds/E5.wav</file>
+        <file>sounds/F_Sharp_4.wav</file>
+        <file>sounds/F4.wav</file>
+        <file>sounds/G_Sharp_4.wav</file>
+        <file>sounds/G4.wav</file>
+        <file>sounds/Sound.qrc</file>
+    </qresource>
+</RCC>

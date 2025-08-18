@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-6b0791f43fade5df8494.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PianoApp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "PianoApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PianoApp-Debug-e0196efaf04fd5ecea54.json",
+					"name" : "PianoApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PianoApp_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PianoApp_autogen-Debug-25a120a6d539e1c718db.json",
+					"name" : "PianoApp_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PianoApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PianoApp_autogen_timestamp_deps-Debug-0420bf78bf85e39473ce.json",
+					"name" : "PianoApp_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/Mandeep Singh/Documents/PianoApp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

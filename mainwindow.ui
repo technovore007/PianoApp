@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1276</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_C">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>90</y>
+      <width>72</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>72</width>
+      <height>290</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px; /* no rounded corners */
+    min-width: 70px;
+    min-height: 288px;
+}
+QPushButton:pressed {
+    background-color: #ddd; /* slightly darker when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_D">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>90</y>
+      <width>72</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>72</width>
+      <height>290</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px; /* no rounded corners */
+    min-width: 70px;
+    min-height: 288px;
+}
+QPushButton:pressed {
+    background-color: #ddd; /* slightly darker when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_E">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>90</y>
+      <width>72</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>72</width>
+      <height>290</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px; /* no rounded corners */
+    min-width: 70px;
+    min-height: 288px;
+}
+QPushButton:pressed {
+    background-color: #ddd; /* slightly darker when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_G">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>90</y>
+      <width>72</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>72</width>
+      <height>290</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px; /* no rounded corners */
+    min-width: 70px;
+    min-height: 288px;
+}
+QPushButton:pressed {
+    background-color: #ddd; /* slightly darker when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_F">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>90</y>
+      <width>72</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>72</width>
+      <height>290</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px; /* no rounded corners */
+    min-width: 70px;
+    min-height: 288px;
+}
+QPushButton:pressed {
+    background-color: #ddd; /* slightly darker when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_B">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>90</y>
+      <width>72</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>72</width>
+      <height>290</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px; /* no rounded corners */
+    min-width: 70px;
+    min-height: 288px;
+}
+QPushButton:pressed {
+    background-color: #ddd; /* slightly darker when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_A">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>90</y>
+      <width>72</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>72</width>
+      <height>290</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px; /* no rounded corners */
+    min-width: 70px;
+    min-height: 288px;
+}
+QPushButton:pressed {
+    background-color: #ddd; /* slightly darker when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_C1">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>90</y>
+      <width>72</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>72</width>
+      <height>290</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px; /* no rounded corners */
+    min-width: 70px;
+    min-height: 288px;
+}
+QPushButton:pressed {
+    background-color: #ddd; /* slightly darker when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_D1">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>90</y>
+      <width>72</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>72</width>
+      <height>290</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px; /* no rounded corners */
+    min-width: 70px;
+    min-height: 288px;
+}
+QPushButton:pressed {
+    background-color: #ddd; /* slightly darker when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_E1">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>90</y>
+      <width>72</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>72</width>
+      <height>290</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px; /* no rounded corners */
+    min-width: 70px;
+    min-height: 288px;
+}
+QPushButton:pressed {
+    background-color: #ddd; /* slightly darker when pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_C_sharp">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>90</y>
+      <width>63</width>
+      <height>186</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0px;
+    min-width: 61px;
+    min-height: 184px;
+}
+QPushButton:pressed {
+    background-color: #333;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_D_sharp">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>90</y>
+      <width>63</width>
+      <height>186</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0px;
+    min-width: 61px;
+    min-height: 184px;
+}
+QPushButton:pressed {
+    background-color: #333;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_F_sharp">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>90</y>
+      <width>63</width>
+      <height>186</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0px;
+    min-width: 61px;
+    min-height: 184px;
+}
+QPushButton:pressed {
+    background-color: #333;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_G_sharp">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>90</y>
+      <width>63</width>
+      <height>186</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0px;
+    min-width: 61px;
+    min-height: 184px;
+}
+QPushButton:pressed {
+    background-color: #333;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_B_flat">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>90</y>
+      <width>63</width>
+      <height>186</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0px;
+    min-width: 61px;
+    min-height: 184px;
+}
+QPushButton:pressed {
+    background-color: #333;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_C_sharp1">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>90</y>
+      <width>63</width>
+      <height>186</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0px;
+    min-width: 61px;
+    min-height: 184px;
+}
+QPushButton:pressed {
+    background-color: #333;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btn_D_sharp1">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>90</y>
+      <width>63</width>
+      <height>186</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0px;
+    min-width: 61px;
+    min-height: 184px;
+}
+QPushButton:pressed {
+    background-color: #333;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">buttonGroup</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>40</y>
+      <width>911</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(248, 232, 208);
+border-radius: 50px;
+border-color: rgb(0, 0, 0);</string>
+    </property>
+   </widget>
+   <zorder>widget</zorder>
+   <zorder>btn_C</zorder>
+   <zorder>btn_D</zorder>
+   <zorder>btn_E</zorder>
+   <zorder>btn_G</zorder>
+   <zorder>btn_F</zorder>
+   <zorder>btn_B</zorder>
+   <zorder>btn_A</zorder>
+   <zorder>btn_C1</zorder>
+   <zorder>btn_D1</zorder>
+   <zorder>btn_E1</zorder>
+   <zorder>btn_C_sharp</zorder>
+   <zorder>btn_D_sharp</zorder>
+   <zorder>btn_F_sharp</zorder>
+   <zorder>btn_G_sharp</zorder>
+   <zorder>btn_B_flat</zorder>
+   <zorder>btn_C_sharp1</zorder>
+   <zorder>btn_D_sharp1</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1276</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPianoWindow">
+    <property name="title">
+     <string>PianoWindow</string>
+    </property>
+   </widget>
+   <addaction name="menuPianoWindow"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
