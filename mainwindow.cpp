@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // Create sound objects for each button
+    // Creating sound objects for each button
     QSoundEffect *soundA4       = new QSoundEffect(this);
     QSoundEffect *soundB4       = new QSoundEffect(this);
     QSoundEffect *soundBb4      = new QSoundEffect(this);
@@ -48,7 +48,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
-    // Connect white keys
+    // Connecting white keys
     connect(ui->btn_C,  &QPushButton::clicked, soundC4, &QSoundEffect::play);
     connect(ui->btn_D,  &QPushButton::clicked, soundD4, &QSoundEffect::play);
     connect(ui->btn_E,  &QPushButton::clicked, soundE4, &QSoundEffect::play);
@@ -61,7 +61,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->btn_D1, &QPushButton::clicked, soundD5, &QSoundEffect::play);
     connect(ui->btn_E1, &QPushButton::clicked, soundE5, &QSoundEffect::play);
 
-    // Connect black keys
+    // Connecting black keys
     connect(ui->btn_C_sharp,  &QPushButton::clicked, soundCsharp4, &QSoundEffect::play);
     connect(ui->btn_D_sharp,  &QPushButton::clicked, soundDsharp4, &QSoundEffect::play);
     connect(ui->btn_F_sharp,  &QPushButton::clicked, soundFsharp4, &QSoundEffect::play);

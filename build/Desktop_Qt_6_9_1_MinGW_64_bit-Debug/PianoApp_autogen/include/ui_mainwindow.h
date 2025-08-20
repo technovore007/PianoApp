@@ -17,6 +17,7 @@
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSlider>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -44,6 +45,8 @@ public:
     QPushButton *btn_C_sharp1;
     QPushButton *btn_D_sharp1;
     QWidget *widget;
+    QPushButton *pushButton;
+    QSlider *horizontalSlider;
     QMenuBar *menubar;
     QMenu *menuPianoWindow;
     QStatusBar *statusbar;
@@ -329,6 +332,13 @@ public:
         widget->setStyleSheet(QString::fromUtf8("background-color: rgb(248, 232, 208);\n"
 "border-radius: 50px;\n"
 "border-color: rgb(0, 0, 0);"));
+        pushButton = new QPushButton(widget);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(200, 350, 93, 29));
+        horizontalSlider = new QSlider(widget);
+        horizontalSlider->setObjectName("horizontalSlider");
+        horizontalSlider->setGeometry(QRect(590, 20, 160, 22));
+        horizontalSlider->setOrientation(Qt::Orientation::Horizontal);
         MainWindow->setCentralWidget(centralwidget);
         widget->raise();
         btn_C->raise();
@@ -385,6 +395,7 @@ public:
         btn_B_flat->setText(QString());
         btn_C_sharp1->setText(QString());
         btn_D_sharp1->setText(QString());
+        pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         menuPianoWindow->setTitle(QCoreApplication::translate("MainWindow", "PianoWindow", nullptr));
     } // retranslateUi
 
