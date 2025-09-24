@@ -168,3 +168,4 @@ build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/.ninja_deps
 build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/.ninja_deps
 build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp.exe
 build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/PianoApp_autogen.dir/ParseCache.txt
+/.vscode
