@@ -581,8 +581,6 @@ QPushButton:pressed {
 border-radius: 50px;
 border-color: rgb(0, 0, 0);</string>
     </property>
-<<<<<<< Updated upstream
-=======
     <widget class="QFrame" name="frame">
      <property name="geometry">
       <rect>
@@ -602,7 +600,7 @@ border-color: rgb(0, 0, 0);</string>
      <property name="frameShadow">
       <enum>QFrame::Shadow::Raised</enum>
      </property>
-     <widget class="QSlider" name="verticalSlider">
+     <widget class="QSlider" name="VolumeSlider">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -616,7 +614,6 @@ border-color: rgb(0, 0, 0);</string>
       </property>
      </widget>
     </widget>
->>>>>>> Stashed changes
    </widget>
    <zorder>widget</zorder>
    <zorder>btn_C</zorder>
