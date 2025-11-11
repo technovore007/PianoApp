@@ -13,6 +13,7 @@
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QFrame>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -44,6 +45,11 @@ public:
     QPushButton *btn_C_sharp1;
     QPushButton *btn_D_sharp1;
     QWidget *widget;
+<<<<<<< Updated upstream
+=======
+    QFrame *frame;
+    QSlider *verticalSlider;
+>>>>>>> Stashed changes
     QMenuBar *menubar;
     QMenu *menuPianoWindow;
     QStatusBar *statusbar;
@@ -325,10 +331,24 @@ public:
 ""));
         widget = new QWidget(centralwidget);
         widget->setObjectName("widget");
-        widget->setGeometry(QRect(60, 40, 911, 391));
-        widget->setStyleSheet(QString::fromUtf8("background-color: rgb(248, 232, 208);\n"
+        widget->setGeometry(QRect(50, 40, 1031, 391));
+        widget->setStyleSheet(QString::fromUtf8("background-color: rgb(190, 190, 190);\n"
 "border-radius: 50px;\n"
 "border-color: rgb(0, 0, 0);"));
+<<<<<<< Updated upstream
+=======
+        frame = new QFrame(widget);
+        frame->setObjectName("frame");
+        frame->setGeometry(QRect(880, 70, 120, 261));
+        frame->setStyleSheet(QString::fromUtf8("background-color: rgb(130, 130, 130);\n"
+""));
+        frame->setFrameShape(QFrame::Shape::StyledPanel);
+        frame->setFrameShadow(QFrame::Shadow::Raised);
+        verticalSlider = new QSlider(frame);
+        verticalSlider->setObjectName("verticalSlider");
+        verticalSlider->setGeometry(QRect(50, 30, 22, 201));
+        verticalSlider->setOrientation(Qt::Orientation::Vertical);
+>>>>>>> Stashed changes
         MainWindow->setCentralWidget(centralwidget);
         widget->raise();
         btn_C->raise();
