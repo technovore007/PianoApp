@@ -567,18 +567,18 @@ QPushButton:pressed {
      <string notr="true">buttonGroup</string>
     </attribute>
    </widget>
-   <widget class="QWidget" name="widget" native="true">
+   <widget class="QWidget" name="PianoBody" native="true">
     <property name="geometry">
      <rect>
       <x>50</x>
       <y>40</y>
-      <width>1031</width>
+      <width>1041</width>
       <height>391</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(190, 190, 190);
-border-radius: 50px;
+border-radius: 55px;
 border-color: rgb(0, 0, 0);</string>
     </property>
     <widget class="QFrame" name="frame">
@@ -615,7 +615,7 @@ border-color: rgb(0, 0, 0);</string>
      </widget>
     </widget>
    </widget>
-   <zorder>widget</zorder>
+   <zorder>PianoBody</zorder>
    <zorder>btn_C</zorder>
    <zorder>btn_D</zorder>
    <zorder>btn_E</zorder>

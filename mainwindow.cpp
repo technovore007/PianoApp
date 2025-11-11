@@ -71,6 +71,31 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->btn_C_sharp1, &QPushButton::clicked, soundCsharp5, &QSoundEffect::play);
     connect(ui->btn_D_sharp1, &QPushButton::clicked, soundDsharp5, &QSoundEffect::play);
 
+    // Connects the vertical volume slider to the QSoundEffect objects
+    auto setVolume = [=](int value) {
+        qreal vol = value / 100.0; // QSlider: 0..100 to QSoundEffect: 0..1
+        soundA4->setVolume(vol);
+        soundB4->setVolume(vol);
+        soundBb4->setVolume(vol);
+        soundC4->setVolume(vol);
+        soundC5->setVolume(vol);
+        soundCsharp4->setVolume(vol);
+        soundCsharp5->setVolume(vol);
+        soundD4->setVolume(vol);
+        soundD5->setVolume(vol);
+        soundDsharp4->setVolume(vol);
+        soundDsharp5->setVolume(vol);
+        soundE4->setVolume(vol);
+        soundE5->setVolume(vol);
+        soundF4->setVolume(vol);
+        soundFsharp4->setVolume(vol);
+        soundG4->setVolume(vol);
+        soundGsharp4->setVolume(vol);
+    };
+    connect(ui->VolumeSlider, &QSlider::valueChanged, setVolume);
+    setVolume(ui->VolumeSlider->value());
+
+
 }
 
 MainWindow::~MainWindow()

@@ -45,7 +45,7 @@ public:
     QPushButton *btn_B_flat;
     QPushButton *btn_C_sharp1;
     QPushButton *btn_D_sharp1;
-    QWidget *widget;
+    QWidget *PianoBody;
     QFrame *frame;
     QSlider *VolumeSlider;
     QMenuBar *menubar;
@@ -327,13 +327,13 @@ public:
 "    background-color: #333;\n"
 "}\n"
 ""));
-        widget = new QWidget(centralwidget);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(50, 40, 1031, 391));
-        widget->setStyleSheet(QString::fromUtf8("background-color: rgb(190, 190, 190);\n"
-"border-radius: 50px;\n"
+        PianoBody = new QWidget(centralwidget);
+        PianoBody->setObjectName("PianoBody");
+        PianoBody->setGeometry(QRect(50, 40, 1041, 391));
+        PianoBody->setStyleSheet(QString::fromUtf8("background-color: rgb(190, 190, 190);\n"
+"border-radius: 55px;\n"
 "border-color: rgb(0, 0, 0);"));
-        frame = new QFrame(widget);
+        frame = new QFrame(PianoBody);
         frame->setObjectName("frame");
         frame->setGeometry(QRect(880, 70, 120, 261));
         frame->setStyleSheet(QString::fromUtf8("background-color: rgb(130, 130, 130);\n"
@@ -345,7 +345,7 @@ public:
         VolumeSlider->setGeometry(QRect(50, 30, 22, 201));
         VolumeSlider->setOrientation(Qt::Orientation::Vertical);
         MainWindow->setCentralWidget(centralwidget);
-        widget->raise();
+        PianoBody->raise();
         btn_C->raise();
         btn_D->raise();
         btn_E->raise();
