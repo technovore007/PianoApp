@@ -647,6 +647,9 @@ border-color: rgb(0, 0, 0);</string>
        <stylestrategy>PreferAntialias</stylestrategy>
       </font>
      </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton#PowerButton {
     background-color: red;                  /* OFF */
@@ -664,7 +667,7 @@ QPushButton#PowerButton:checked {
 </string>
      </property>
      <property name="text">
-      <string>⏻</string>
+      <string extracomment="Power">⏻</string>
      </property>
      <property name="iconSize">
       <size>

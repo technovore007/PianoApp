@@ -46,30 +46,37 @@ MainWindow::MainWindow(QWidget *parent)
     soundG4->setSource(QUrl("qrc:/sounds/sounds/G4.wav"));
     soundGsharp4->setSource(QUrl("qrc:/sounds/sounds/G_Sharp_4.wav"));
 
+    // Helper lambda for power-controlled playback
+    auto playIfPowered = [this](QSoundEffect* snd) {
+        return [this, snd]() {
+            if (ui->PowerButton->isChecked()) {
+                snd->play();
+            }
+        };
+    };
 
+    // Connect white keys with power check
+    connect(ui->btn_C,  &QPushButton::clicked, playIfPowered(soundC4));
+    connect(ui->btn_D,  &QPushButton::clicked, playIfPowered(soundD4));
+    connect(ui->btn_E,  &QPushButton::clicked, playIfPowered(soundE4));
+    connect(ui->btn_F,  &QPushButton::clicked, playIfPowered(soundF4));
+    connect(ui->btn_G,  &QPushButton::clicked, playIfPowered(soundG4));
+    connect(ui->btn_A,  &QPushButton::clicked, playIfPowered(soundA4));
+    connect(ui->btn_B,  &QPushButton::clicked, playIfPowered(soundB4));
 
-    // Connect white keys
-    connect(ui->btn_C,  &QPushButton::clicked, soundC4, &QSoundEffect::play);
-    connect(ui->btn_D,  &QPushButton::clicked, soundD4, &QSoundEffect::play);
-    connect(ui->btn_E,  &QPushButton::clicked, soundE4, &QSoundEffect::play);
-    connect(ui->btn_F,  &QPushButton::clicked, soundF4, &QSoundEffect::play);
-    connect(ui->btn_G,  &QPushButton::clicked, soundG4, &QSoundEffect::play);
-    connect(ui->btn_A,  &QPushButton::clicked, soundA4, &QSoundEffect::play);
-    connect(ui->btn_B,  &QPushButton::clicked, soundB4, &QSoundEffect::play);
+    connect(ui->btn_C1, &QPushButton::clicked, playIfPowered(soundC5));
+    connect(ui->btn_D1, &QPushButton::clicked, playIfPowered(soundD5));
+    connect(ui->btn_E1, &QPushButton::clicked, playIfPowered(soundE5));
 
-    connect(ui->btn_C1, &QPushButton::clicked, soundC5, &QSoundEffect::play);
-    connect(ui->btn_D1, &QPushButton::clicked, soundD5, &QSoundEffect::play);
-    connect(ui->btn_E1, &QPushButton::clicked, soundE5, &QSoundEffect::play);
+    // Connect black keys with power check
+    connect(ui->btn_C_sharp,  &QPushButton::clicked, playIfPowered(soundCsharp4));
+    connect(ui->btn_D_sharp,  &QPushButton::clicked, playIfPowered(soundDsharp4));
+    connect(ui->btn_F_sharp,  &QPushButton::clicked, playIfPowered(soundFsharp4));
+    connect(ui->btn_G_sharp,  &QPushButton::clicked, playIfPowered(soundGsharp4));
+    connect(ui->btn_B_flat,   &QPushButton::clicked, playIfPowered(soundBb4));
 
-    // Connect black keys
-    connect(ui->btn_C_sharp,  &QPushButton::clicked, soundCsharp4, &QSoundEffect::play);
-    connect(ui->btn_D_sharp,  &QPushButton::clicked, soundDsharp4, &QSoundEffect::play);
-    connect(ui->btn_F_sharp,  &QPushButton::clicked, soundFsharp4, &QSoundEffect::play);
-    connect(ui->btn_G_sharp,  &QPushButton::clicked, soundGsharp4, &QSoundEffect::play);
-    connect(ui->btn_B_flat,   &QPushButton::clicked, soundBb4, &QSoundEffect::play);
-
-    connect(ui->btn_C_sharp1, &QPushButton::clicked, soundCsharp5, &QSoundEffect::play);
-    connect(ui->btn_D_sharp1, &QPushButton::clicked, soundDsharp5, &QSoundEffect::play);
+    connect(ui->btn_C_sharp1, &QPushButton::clicked, playIfPowered(soundCsharp5));
+    connect(ui->btn_D_sharp1, &QPushButton::clicked, playIfPowered(soundDsharp5));
 
     // Connects the vertical volume slider to the QSoundEffect objects
     auto setVolume = [=](int value) {
@@ -94,8 +101,6 @@ MainWindow::MainWindow(QWidget *parent)
     };
     connect(ui->VolumeSlider, &QSlider::valueChanged, setVolume);
     setVolume(ui->VolumeSlider->value());
-
-
 }
 
 MainWindow::~MainWindow()

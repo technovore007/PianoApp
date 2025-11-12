@@ -366,6 +366,7 @@ public:
         font1.setBold(true);
         font1.setStyleStrategy(QFont::PreferAntialias);
         PowerButton->setFont(font1);
+        PowerButton->setCursor(QCursor(Qt::CursorShape::ArrowCursor));
         PowerButton->setStyleSheet(QString::fromUtf8("QPushButton#PowerButton {\n"
 "    background-color: red;                  /* OFF */\n"
 "    border-radius: 20px;\n"
