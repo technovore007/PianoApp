@@ -1,13 +1,13 @@
 # ninja log v6
-11	225	7845398397475560	PianoApp_autogen/timestamp	7309f0c29bf09046
 1273	3548	7768158229923270	CMakeFiles/PianoApp.dir/main.cpp.obj	7fc5622ea46ec05e
-2135	2458	7845398418722137	PianoApp.exe	36d3b19944d65bcc
-11	225	7845398397475560	PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+13	245	7846246941018744	PianoApp_autogen/timestamp	7309f0c29bf09046
+1858	2144	7846246959471513	PianoApp.exe	36d3b19944d65bcc
+13	245	7846246941018744	PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+245	1858	7846246943343407	CMakeFiles/PianoApp.dir/mainwindow.cpp.obj	c7b422220aa50000
 637	6660	7772043044914844	CMakeFiles/PianoApp.dir/PianoApp_autogen/EWIEGA46WW/qrc_Sound.cpp.obj	afa54eec19c29794
 10	341	7768169342804949	PianoApp_autogen/EWIEGA46WW/qrc_resources.cpp	e09a5eb82b832562
-11	225	7845398397475560	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/timestamp	7309f0c29bf09046
-226	2135	7845398399621913	CMakeFiles/PianoApp.dir/mainwindow.cpp.obj	c7b422220aa50000
-11	225	7845398397475560	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+13	245	7846246941018744	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/timestamp	7309f0c29bf09046
+13	245	7846246941018744	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
 1269	3549	7768158229883271	CMakeFiles/PianoApp.dir/PianoApp_autogen/mocs_compilation.cpp.obj	41177d9a504900c1
 23	850	7772043037718448	build.ninja	89225c8368a5d6cc
 10	341	7768169342804949	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/EWIEGA46WW/qrc_resources.cpp	e09a5eb82b832562
@@ -19,9 +19,51 @@
 318	433	7772032109303355	CMakeFiles/PianoApp.dir/PianoApp_autogen/OD6IOU3RYO/qrc_Sound.cpp.obj	c235f30ae83e12dc
 224	634	7772043044774820	PianoApp_autogen/EWIEGA46WW/qrc_Sound.cpp	719f852b40942823
 224	634	7772043044774820	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/EWIEGA46WW/qrc_Sound.cpp	719f852b40942823
-33	298	7845400324535451	PianoApp_autogen/timestamp	7309f0c29bf09046
-33	298	7845400324535451	PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
-33	298	7845400324535451	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/timestamp	7309f0c29bf09046
-33	298	7845400324535451	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
-298	1954	7845400327233331	CMakeFiles/PianoApp.dir/mainwindow.cpp.obj	c7b422220aa50000
-1954	2258	7845400343789468	PianoApp.exe	36d3b19944d65bcc
+60	301	7846247085061049	PianoApp_autogen/timestamp	7309f0c29bf09046
+60	301	7846247085061049	PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+60	301	7846247085061049	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/timestamp	7309f0c29bf09046
+60	301	7846247085061049	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+302	1907	7846247087475844	CMakeFiles/PianoApp.dir/mainwindow.cpp.obj	c7b422220aa50000
+1907	2203	7846247103537088	PianoApp.exe	36d3b19944d65bcc
+53	292	7846247597389532	PianoApp_autogen/timestamp	7309f0c29bf09046
+53	292	7846247597389532	PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+53	292	7846247597389532	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/timestamp	7309f0c29bf09046
+53	292	7846247597389532	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+293	1903	7846247599794520	CMakeFiles/PianoApp.dir/mainwindow.cpp.obj	c7b422220aa50000
+1903	2189	7846247615891786	PianoApp.exe	36d3b19944d65bcc
+56	306	7846247891393744	PianoApp_autogen/timestamp	7309f0c29bf09046
+56	306	7846247891393744	PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+56	306	7846247891393744	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/timestamp	7309f0c29bf09046
+56	306	7846247891393744	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+306	1980	7846247893892688	CMakeFiles/PianoApp.dir/mainwindow.cpp.obj	c7b422220aa50000
+1980	2272	7846247910579448	PianoApp.exe	36d3b19944d65bcc
+60	288	7846248443028511	PianoApp_autogen/timestamp	7309f0c29bf09046
+60	288	7846248443028511	PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+60	288	7846248443028511	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/timestamp	7309f0c29bf09046
+60	288	7846248443028511	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+289	1898	7846248445322712	CMakeFiles/PianoApp.dir/mainwindow.cpp.obj	c7b422220aa50000
+1898	2194	7846248461410892	PianoApp.exe	36d3b19944d65bcc
+10	253	7846251471666366	PianoApp_autogen/timestamp	7309f0c29bf09046
+10	253	7846251471666366	PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+10	253	7846251471666366	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/timestamp	7309f0c29bf09046
+10	253	7846251471666366	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+254	1862	7846251474092245	CMakeFiles/PianoApp.dir/mainwindow.cpp.obj	c7b422220aa50000
+1862	2161	7846251490178935	PianoApp.exe	36d3b19944d65bcc
+52	286	7846251677333811	PianoApp_autogen/timestamp	7309f0c29bf09046
+52	286	7846251677333811	PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+52	286	7846251677333811	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/timestamp	7309f0c29bf09046
+52	286	7846251677333811	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+286	1903	7846251679676957	CMakeFiles/PianoApp.dir/mainwindow.cpp.obj	c7b422220aa50000
+1903	2196	7846251695835463	PianoApp.exe	36d3b19944d65bcc
+53	283	7846252031630596	PianoApp_autogen/timestamp	7309f0c29bf09046
+53	283	7846252031630596	PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+53	283	7846252031630596	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/timestamp	7309f0c29bf09046
+53	283	7846252031630596	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+283	1871	7846252033937770	CMakeFiles/PianoApp.dir/mainwindow.cpp.obj	c7b422220aa50000
+1871	2174	7846252049788520	PianoApp.exe	36d3b19944d65bcc
+61	289	7846252662689291	PianoApp_autogen/timestamp	7309f0c29bf09046
+61	289	7846252662689291	PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+61	289	7846252662689291	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/timestamp	7309f0c29bf09046
+61	289	7846252662689291	C:/Users/Mandeep Singh/Documents/PianoApp/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/PianoApp_autogen/mocs_compilation.cpp	7309f0c29bf09046
+290	1892	7846252665011393	CMakeFiles/PianoApp.dir/mainwindow.cpp.obj	c7b422220aa50000
+1892	2184	7846252680890982	PianoApp.exe	36d3b19944d65bcc

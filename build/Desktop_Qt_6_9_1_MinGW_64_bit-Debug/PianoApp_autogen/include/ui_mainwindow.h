@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QFrame>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -48,6 +49,8 @@ public:
     QWidget *PianoBody;
     QFrame *frame;
     QSlider *VolumeSlider;
+    QPushButton *PowerButton;
+    QLabel *label;
     QMenuBar *menubar;
     QMenu *menuPianoWindow;
     QStatusBar *statusbar;
@@ -57,7 +60,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(1276, 600);
+        MainWindow->resize(1276, 725);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         btn_C = new QPushButton(centralwidget);
@@ -329,13 +332,18 @@ public:
 ""));
         PianoBody = new QWidget(centralwidget);
         PianoBody->setObjectName("PianoBody");
-        PianoBody->setGeometry(QRect(50, 40, 1041, 391));
+        PianoBody->setGeometry(QRect(50, 0, 1041, 431));
+        QFont font;
+        font.setFamilies({QString::fromUtf8("ROG Fonts STRIX SCAR")});
+        font.setWeight(QFont::ExtraBold);
+        font.setItalic(false);
+        PianoBody->setFont(font);
         PianoBody->setStyleSheet(QString::fromUtf8("background-color: rgb(190, 190, 190);\n"
 "border-radius: 55px;\n"
 "border-color: rgb(0, 0, 0);"));
         frame = new QFrame(PianoBody);
         frame->setObjectName("frame");
-        frame->setGeometry(QRect(880, 70, 120, 261));
+        frame->setGeometry(QRect(870, 100, 120, 261));
         frame->setStyleSheet(QString::fromUtf8("background-color: rgb(130, 130, 130);\n"
 ""));
         frame->setFrameShape(QFrame::Shape::StyledPanel);
@@ -343,7 +351,49 @@ public:
         VolumeSlider = new QSlider(frame);
         VolumeSlider->setObjectName("VolumeSlider");
         VolumeSlider->setGeometry(QRect(50, 30, 22, 201));
+        VolumeSlider->setSliderPosition(50);
         VolumeSlider->setOrientation(Qt::Orientation::Vertical);
+        PowerButton = new QPushButton(PianoBody);
+        PowerButton->setObjectName("PowerButton");
+        PowerButton->setGeometry(QRect(60, 30, 40, 40));
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Minimum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(PowerButton->sizePolicy().hasHeightForWidth());
+        PowerButton->setSizePolicy(sizePolicy);
+        QFont font1;
+        font1.setFamilies({QString::fromUtf8("ROG Fonts STRIX SCAR")});
+        font1.setBold(true);
+        font1.setStyleStrategy(QFont::PreferAntialias);
+        PowerButton->setFont(font1);
+        PowerButton->setStyleSheet(QString::fromUtf8("QPushButton#PowerButton {\n"
+"    background-color: red;                  /* OFF */\n"
+"    border-radius: 20px;\n"
+"    border: 2px solid darkred;\n"
+"    color: white;\n"
+"    font-size: 24px;\n"
+"}\n"
+"\n"
+"QPushButton#PowerButton:checked {\n"
+"    background-color: green;                /* ON */\n"
+"    border: 2px solid darkgreen;\n"
+"	border-radius: 20px;\n"
+"}\n"
+""));
+        PowerButton->setIconSize(QSize(25, 25));
+        PowerButton->setCheckable(true);
+        label = new QLabel(PianoBody);
+        label->setObjectName("label");
+        label->setGeometry(QRect(450, 20, 111, 41));
+        QFont font2;
+        font2.setFamilies({QString::fromUtf8("ROG Fonts STRIX SCAR")});
+        font2.setPointSize(14);
+        font2.setBold(true);
+        label->setFont(font2);
+        label->setStyleSheet(QString::fromUtf8("background-color:rgb(140, 140, 140);\n"
+"border-radius: 20px;"));
+        label->setTextFormat(Qt::TextFormat::PlainText);
+        label->setAlignment(Qt::AlignmentFlag::AlignCenter);
         MainWindow->setCentralWidget(centralwidget);
         PianoBody->raise();
         btn_C->raise();
@@ -400,6 +450,8 @@ public:
         btn_B_flat->setText(QString());
         btn_C_sharp1->setText(QString());
         btn_D_sharp1->setText(QString());
+        PowerButton->setText(QCoreApplication::translate("MainWindow", "\342\217\273", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Casio", nullptr));
         menuPianoWindow->setTitle(QCoreApplication::translate("MainWindow", "PianoWindow", nullptr));
     } // retranslateUi
 

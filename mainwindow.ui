@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1276</width>
-    <height>600</height>
+    <height>725</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -571,10 +571,17 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>40</y>
+      <y>0</y>
       <width>1041</width>
-      <height>391</height>
+      <height>431</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>ROG Fonts STRIX SCAR</family>
+      <italic>false</italic>
+      <fontweight>ExtraBold</fontweight>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(190, 190, 190);
@@ -584,8 +591,8 @@ border-color: rgb(0, 0, 0);</string>
     <widget class="QFrame" name="frame">
      <property name="geometry">
       <rect>
-       <x>880</x>
-       <y>70</y>
+       <x>870</x>
+       <y>100</y>
        <width>120</width>
        <height>261</height>
       </rect>
@@ -609,10 +616,95 @@ border-color: rgb(0, 0, 0);</string>
         <height>201</height>
        </rect>
       </property>
+      <property name="sliderPosition">
+       <number>50</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Orientation::Vertical</enum>
       </property>
      </widget>
+    </widget>
+    <widget class="QPushButton" name="PowerButton">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>30</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>ROG Fonts STRIX SCAR</family>
+       <pointsize>-1</pointsize>
+       <bold>true</bold>
+       <stylestrategy>PreferAntialias</stylestrategy>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#PowerButton {
+    background-color: red;                  /* OFF */
+    border-radius: 20px;
+    border: 2px solid darkred;
+    color: white;
+    font-size: 24px;
+}
+
+QPushButton#PowerButton:checked {
+    background-color: green;                /* ON */
+    border: 2px solid darkgreen;
+	border-radius: 20px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>⏻</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>25</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>20</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>ROG Fonts STRIX SCAR</family>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(140, 140, 140);
+border-radius: 20px;</string>
+     </property>
+     <property name="text">
+      <string>Casio</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::TextFormat::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
     </widget>
    </widget>
    <zorder>PianoBody</zorder>
